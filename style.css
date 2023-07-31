@@ -83,27 +83,13 @@ header {
   margin: 10px; 
   padding: 10px; 
 }
-/* .tools {
-  opacity: 0;
-  flex-direction: row-reverse;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.54);
-  display: flex;
-  font-size: 12px;
-  line-height: 26px;
-  margin: 4px 0;
-  position: relative;
-  transition: opacity 0.218s ease-in-out, background-color 0.218s ease-in-out,
-    box-shadow 0.218s ease-in-out;
-} */
 .task-name {
   display: block;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin-bottom: 5px; /* Add some space below the task name */
+  margin-bottom: 5px;
 }
-
 .task-desc {
   font-size: 14px;
 }
@@ -112,7 +98,6 @@ header {
     outline: none;
 }
 #form-buttons {
-  /* display: none; */
   text-align: center;
 }  
 #submitbtn{
