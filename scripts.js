@@ -42,10 +42,14 @@ class App {
       const name = this.$taskname.value;
       const desc = this.$taskdes.value;
       const hasTask = name || desc;
-  
-      if (isFormClicked) {
-        this.addTask({ name, desc });
-      } 
+      if(name && desc){
+        if(isFormClicked){
+          this.addTask({ name, desc });
+        }
+      }
+      else{
+        alert("Form don't contain content!");
+      }
     }
   addTask({ name, desc }) {
       const newTask = {
