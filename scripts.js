@@ -1,10 +1,6 @@
 class App {
     constructor() {
         this.tasks = JSON.parse(localStorage.getItem('Tasklist')) || [];
-        this.name = "";
-        this.desc = "";
-        this.id = "";
-
         this.$Tasklist = document.querySelector("#Tasklist");
         this.$form = document.querySelector("#form");
         this.$taskname = document.querySelector("#taskname");
@@ -15,7 +11,7 @@ class App {
     }
 
     addEventListeners() {
-        document.body.addEventListener("submit", event => {
+        this.$form.addEventListener("submit", event => {
             event.preventDefault();
             const name = this.$taskname.value;
             const desc = this.$taskdes.value;
