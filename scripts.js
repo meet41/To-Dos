@@ -27,8 +27,9 @@ class App {
     }
 
     handleTaskClick(event) {
-        if (event.target.classList.contains("task-delete")) {
-            const taskId = event.target.dataset.id;
+        const $task = event.target.closest(".task-list");
+        if ($task) {
+            const taskId = $task.dataset.id;
             this.deleteTask(taskId);
         }
     }
