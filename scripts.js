@@ -19,6 +19,8 @@ class App {
             const hasTask = name || desc;
             if (hasTask) {
                 this.addTask({ name, desc });
+                this.$taskname.value = "";
+                this.$taskdes.value = "";
             }
         });
 
